@@ -1,0 +1,55 @@
+:root {
+  --page: #eef0f2;
+  --ink: #16181c;
+  --muted: #585f69;
+  --signal: #2451ff;
+  --signal-ink: #ffffff; /* text on --signal */
+  --signal-wash: rgb(36 81 255 / 0.08);
+  --rule: #c9ced6;
+  --surface: #e4e7eb;
+
+  --font: 'Schibsted Grotesk', system-ui, sans-serif;
+
+  --t-sm: 0.875rem;
+  --t-base: 1.0625rem;
+  --t-md: 1.3125rem;
+  --t-lg: clamp(1.375rem, 2.2vw, 1.875rem);
+  --t-xl: clamp(2rem, 4vw, 3.25rem);
+  --t-name: clamp(3.5rem, 12.5vw, 10.5rem);
+
+  --measure: 64ch;
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --max: 84rem;
+  --nav-h: 4rem;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --page: #14161a;
+    --ink: #e8eaed;
+    --muted: #9ba1aa;
+    --signal: #7189ff;
+    --signal-ink: #0e1015;
+    --signal-wash: rgb(113 137 255 / 0.1);
+    --rule: #2c3038;
+    --surface: #1c1f24;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --page: #14161a;
+  --ink: #e8eaed;
+  --muted: #9ba1aa;
+  --signal: #7189ff;
+  --signal-ink: #0e1015;
+  --signal-wash: rgb(113 137 255 / 0.1);
+  --rule: #2c3038;
+  --surface: #1c1f24;
+  color-scheme: dark;
+}

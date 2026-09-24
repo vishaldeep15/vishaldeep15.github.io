@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules
+dist
+*.tsbuildinfo
+.vite
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.*
+*.local
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Local AI agent skills (installed per machine, not part of the site)
+.agents/
+skills-lock.json
+
+# Original upload of the headshot; the site uses public/images/headshot.jpg
+/vishal_headshot.jpg

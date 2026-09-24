@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal Deep</title>
+    <meta
+      name="description"
+      content="Vishal Deep, embedded software engineer at Lennox with a PhD in batteryless computing. Experience, projects, publications and CV."
+    />
+    <meta name="theme-color" content="#eef0f2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)" />
+    <script>
+      // Apply a saved theme choice before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Vishal Deep, embedded software engineer" />
+    <meta property="og:description" content="Firmware for commercial HVAC and smart thermostats at Lennox. PhD in batteryless computing from Iowa State." />
+    <meta property="og:url" content="https://vishaldeep15.github.io/" />
+    <meta property="og:image" content="https://vishaldeep15.github.io/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vishal Deep",
+        "jobTitle": "Embedded Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "Lennox International" },
+        "url": "https://vishaldeep15.github.io/",
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Iowa State University" },
+        "sameAs": [
+          "https://www.linkedin.com/in/vishaldeep15",
+          "https://scholar.google.com/citations?user=6FT4rHUAAAAJ",
+          "https://github.com/vishaldeep15"
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
